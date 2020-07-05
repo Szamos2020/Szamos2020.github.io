@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+</head>
+
+<body>
+    <h1>About</h1>
+    <li>
+        <a href="/">Home</a>
+    </li>
+    <li>
+        <a href="/kézműves hamburgerező.html">A hamburgerező honlapja</a>
+    </li>
+    <li>
+        <a href="/pages/Orders.html">Orders</a>
+    </li>
+    <li>
+        <a href="/pages/provided.html">Provided</a>
+    </li>
+    <li>
+        <a href="/about.html">About</a>
+    </li>
+    <li>
+        <a href="/index.html">Index</a>
+    </li>
+    <a href="http://127.0.0.1:5500/index.html">Home</a>
+    <a href="http://127.0.0.1:5500/k%C3%A9zm%C5%B1ves%20hamburgerez%C5%91.html">Tovább a hamburgerező honlapjára</a>
+    <p>Az "a" paranccsal (href=) szúrhatok be hivatkozást másik oldalra történő ugráshoz.</p>
+    <p>A teljes "abszolút URL beírása után adhatom meg a hivatkozás nevét.</p>
+    <p>Azonos mappában található oldal esetén elég a relatív elérési utat megadni: index.html</p>
+    <p>Azonos gyökéren, de almappa eléréséhet a relatív utvonal elé / jelet kell tenni!</p>
+    <p id="Cim azonosítójának megadása">id beírásával történik az = jel után.
+        A lapon a #azonosítót beírva az adott helyre ugrik.
+    </p>
+    <p>ul utasítás=> unordered list felsorolás</p>
+    <ul>
+        <li>utasítás után li parancs=> list item - felsorolás pontokban egymás alatt</li>
+    </ul>
+
+    <p>
+        ol utasítás=> ordered list
+    <ol>
+        <li>itt számozással fog megjelenni a felsorolás tétele.</li>
+        <li>mindig kell li-t írni az egyes elemekhez.</li>
+    </ol>
+    </p>
+    <h3>Kép beszúrása</h3>
+    img parancs használata - src után írni a kép abszolút URL címét (amennyiben nem saját képről van szó). Alt után a
+    kép alternatív nevének megjelenítését.
+    <p>saját kép esetében tartalmazó mappában képen jobb klikkel "copy relative path" beszúrása az src után, de a
+        windows \ jelet át kell írni / jellé.
+    </p>
+    <p><b>Ebbe az esetben egymás mellé kerültek a képek</b></p>
+    <img src="img/chicken burger.jpg" alt="Csibe burger">
+
+    <a href="http://www.borsonline.hu/aktualis/ime-a-verhetetlen-hazi-hamburger-recept-tipp/153279">Házi hamburger
+        recept</a>
+    <a target="blank" href="/Pages/Orders.html">Rendelés</a>
+    <a href="http://www.borsonline.hu/aktualis/ime-a-verhetetlen-hazi-hamburger-recept-tipp/153279">
+        <img src="img/chicken burger.jpg" alt="Csibe burger"></a>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About</title>
+    </head>
+
+    <body>
+        <h1>About</h1>
+        <a href="http://127.0.0.1:5500/index.html">Home</a>
+        <p>Az "a" paranccsal (href=) szúrhatok be hivatkozást másik oldalra történő ugráshoz.</p>
+        <p>A teljes "abszolút URL beírása után adhatom meg a hivatkozás nevét.</p>
+        <p>Azonos mappában található oldal esetén elég a relatív elérési utat megadni: index.html</p>
+        <p>Azonos gyökéren, de almappa eléréséhet a relatív utvonal elé / jelet kell tenni!</p>
+        <p id="Cim azonosítójának megadása">id beírásával történik az = jel után.
+            A lapon a #azonosítót beírva az adott helyre ugrik.
+        </p>
+        <p>ul utasítás=> unordered list felsorolás</p>
+        <ul>
+            <li>utasítás után li parancs=> list item - felsorolás pontokban egymás alatt</li>
+        </ul>
+
+        <p>ol utasítás=> ordered list
+        <ol>
+            <li>itt számozással fog megjelenni a felsorolás tétele.</li>
+            <li>mindig kell li-t írni az egyes elemekhez.</li>
+        </ol>
+        </p>
+        <h3>Kép beszúrása</h3>
+        img parancs használata - src után írni a kép abszolút URL címét (amennyiben nem saját képről van szó). Alt után
+        a kép alternatív nevének megjelenítését.
+        <p>saját kép esetében tartalmazó mappában képen jobb klikkel "copy relative path" beszúrása az src után, de a
+            windows \ jelet át kell írni / jellé.
+        </p>
+        <p><b>Ebbe az esetben egymás mellé kerültek a képek</b></p>
+        <img src="img/chicken burger.jpg" alt="Csibe burger">
+
+        <a href="http://www.borsonline.hu/aktualis/ime-a-verhetetlen-hazi-hamburger-recept-tipp/153279">Házi hamburger
+            recept</a>
+        <a target="blank" href="/Pages/Orders.html">Rendelés</a>
+        <a href="http://www.borsonline.hu/aktualis/ime-a-verhetetlen-hazi-hamburger-recept-tipp/153279">
+            <img src="img/chicken burger.jpg" alt="Csibe burger"></a>
+
+        <h3>Hivatkozás új lapon történő megnyitása</h3>
+        <p>Amennyiben az a parancs után, még a href elé beírjuk a target="blank" attribútumot, a hivatkozott oldal/elem
+            új lapon nyílik meg. Bezárás után visszaugrunk az elhagyott oldalra.</p>
+        <p>Amennyiben sortörést kívánunk beiktatni <br>azt a <b>br</b> kóddal tudjuk megtenni. <br>Itt záró kód nem
+            kell!
+        </p>
+        <p>
+            Csak lezáró taggel rendelkező parancsoknál van lehetőség a beágyazásra.
+        </p>
+        <p>w3cvalidator oldal a neten ellenőrzi a beírt kódolást</p>
+
+    </body>
+
+    </html>
+
+    <h3>Hivatkozás új lapon történő megnyitása</h3>
+    <p>Amennyiben az a parancs után, még a href elé beírjuk a target="blank" attribútumot, a hivatkozott oldal/elem új
+        lapon nyílik meg. Bezárás után visszaugrunk az elhagyott oldalra.</p>
+    <p>Amennyiben sortörést kívánunk beiktatni <br>azt a <b>br</b> kóddal tudjuk megtenni. <br>Itt záró kód nem kell!
+    </p>
+    <p>
+        Csak lezáró taggel rendelkező parancsoknál van lehetőség a beágyazásra.
+    </p>
+    <p>w3cvalidator oldal a neten ellenőrzi a beírt kódolást</p>
+
+    <h1>Táblázat készítése</h1>
+    <p>Táblázat =table tag</p>
+    <p>tr= sor, td= cella</p>
+    <p>captions= a táblázat neve</p>
+    <p>thead tag= a táblázat fejléce. Ezen belül ismét tr tag, majd azin belül th az oszlopok fejléceinek megnevezéséhez. Ez esetben létre kell hozni egy tbody-t, mely a táblázat testét jelöli.</p>
+    <p>theadt= oszlopok fejlécei, tbody=adatok</p>
+    <p>tfoot=láblác. Itt szintén szükslges a td és tr parancs használata.</p>
+    <p>Ha a td parancs után egyből <b>rowspan</b>-t írok, ott megadhatom, hogy mány oszlopot vonjon össze.</p>
+    <p> <b>colspan</b> parancs ugyanaz, csal sorok összevonása.</p>
+
+</body>
+
+</html>
